@@ -94,13 +94,19 @@ export function SiteFooter() {
 
         {/* Disclaimer + copyright */}
         <div className="mt-8 space-y-3 border-t border-border pt-6">
-          <p className="text-xs leading-relaxed text-muted-foreground">
-            <strong>Aviso legal:</strong> GospainSportTours es un mercado secundario de reventas.
-            Las entradas publicadas en este sitio son ofrecidas por vendedores independientes.
-            Los precios pueden ser superiores al valor nominal de las entradas.
-            No somos el vendedor original, no gestionamos la venta directa ni recaudamos
-            datos de pago. El precio final debe verificarse con el proveedor antes de la compra.
-          </p>
+          <div
+            role="note"
+            aria-label="Aviso legal importante"
+            className="rounded-xl border border-disclaimer-border bg-disclaimer px-4 py-3"
+          >
+            <p className="text-sm leading-relaxed text-disclaimer-foreground">
+              <strong>Aviso legal:</strong> GospainSportTours es un mercado secundario de reventas.
+              Las entradas publicadas en este sitio son ofrecidas por vendedores independientes.
+              Los precios pueden ser superiores al valor nominal de las entradas. No somos el
+              vendedor original, no gestionamos la venta directa ni recaudamos datos de pago. El
+              precio final debe verificarse con el proveedor antes de la compra.
+            </p>
+          </div>
           <p className="text-xs text-muted-foreground">
             © {year} K.C. NTOMATA LIMITED — GospainSportTours.com — Todos los derechos reservados.
           </p>
