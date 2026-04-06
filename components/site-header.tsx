@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X, Search } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 
 const navLinks = [
   { href: '/catalog', label: 'Eventos' },
@@ -25,9 +26,7 @@ export function SiteHeader() {
           className="flex items-center gap-2 font-heading text-xl font-bold text-foreground"
           aria-label="GospainSportTours - página de inicio"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground text-sm font-black">
-            G
-          </span>
+          <Image src="/favicon.ico" alt="GospainSportTours" width={32} height={32} />
           <span>
             <span className="text-primary">Gospain</span>
             <span className="text-foreground">SportTours</span>
