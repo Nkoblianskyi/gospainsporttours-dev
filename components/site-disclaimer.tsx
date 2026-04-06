@@ -13,20 +13,19 @@ export function SiteDisclaimer() {
     <div
       role="note"
       aria-label="Aviso legal importante"
-      className="w-full border-b border-disclaimer-border bg-disclaimer py-3.5"
+      className="w-full border-b border-disclaimer-border bg-disclaimer py-4"
     >
-      <div className="mx-auto flex max-w-7xl items-start gap-3 px-4 md:px-6">
+      <div className="mx-auto flex max-w-7xl items-start gap-3.5 px-4 md:px-6">
         <AlertTriangle
           className="mt-0.5 h-5 w-5 shrink-0 text-disclaimer-foreground"
           aria-hidden="true"
         />
-        <p className="text-base leading-relaxed text-disclaimer-foreground">
+        <p className="text-base font-medium leading-relaxed text-disclaimer-foreground">
           <strong>Aviso importante:</strong> GospainSportTours es un{' '}
-          <strong>mercado secundario</strong>. Ofrecemos entradas{' '}
-          <strong>revendidas por terceros</strong>. Los precios pueden ser{' '}
-          <strong>superiores al valor nominal</strong> de la entrada. No somos
-          el vendedor original ni recaudamos datos de pago. Consulte siempre el
-          precio final con el proveedor antes de comprar.
+          <strong>mercado secundario</strong> de reventa de entradas. Las
+          entradas que se muestran son <strong>revendidas por terceros</strong>{' '}
+          y los precios pueden ser <strong>superiores al valor nominal</strong>.
+          <span className="font-semibold"> Comparamos precios; no vendemos entradas.</span>
         </p>
       </div>
     </div>
